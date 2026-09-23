@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.8.6)
+cmake_minimum_required(VERSION 3.5)
 
 set(VERSION "0.1")
 # $Format:Packaged from commit %H%nset(COMMIT %h)%nset(REFS "%d")$
@@ -91,7 +91,7 @@ else()
       set(CMAKE_AR gcc-ar)
       set(CMAKE_RANLIB gcc-ranlib)
     endif()
-    set(RELEASE_FLAGS "${RELEASE_FLAGS} -flto")
+    #set(RELEASE_FLAGS "${RELEASE_FLAGS} -flto")
   endif()
   #if(CMAKE_C_COMPILER_ID STREQUAL "GNU" AND NOT MINGW)
   #  set(RELEASE_FLAGS "${RELEASE_FLAGS} -fno-fat-lto-objects")
